@@ -1,0 +1,41 @@
+{
+  "name": "xiaoliuren-mcp",
+  "version": "1.0.0",
+  "description": "小六壬 MCP 服务器，提供日期时辰分析指导",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "xiaoliuren",
+    "fortune-telling"
+  ],
+  "mcp": {
+    "server": {
+      "name": "xiaoliuren",
+      "description": "小六壬占卜分析MCP服务器",
+      "version": "1.0.0",
+      "command": "node",
+      "args": [
+        "index.js"
+      ],
+      "tools": [
+        {
+          "name": "analyze_xiaoliuren",
+          "description": "分析指定日期时辰的小六壬指导意见"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "debug": "node --inspect index.js",
+    "test": "node -e \"console.log('测试MCP服务器...'); import('./index.js').then(() => console.log('✅ 服务器启动成功')).catch(e => console.error('❌ 服务器启动失败:', e.message))\"",
+    "vscode-test": "node vscode-test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "js-calendar-converter": "^0.0.7"
+  }
+}

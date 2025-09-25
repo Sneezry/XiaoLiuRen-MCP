@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-typescript-next",
+    "esbenp.prettier-vscode",
+    "GitHub.copilot",
+    "GitHub.copilot-chat"
+  ]
+}

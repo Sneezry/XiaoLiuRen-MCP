@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "小六壬（开发）": {
+      "type": "command",
+      "command": "node",
+      "args": [
+        "index.js"
+      ],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
