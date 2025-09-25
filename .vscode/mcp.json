@@ -2,9 +2,9 @@
   "servers": {
     "小六壬（开发）": {
       "type": "command",
-      "command": "node",
+      "command": "npx",
       "args": [
-        "index.js"
+        "."
       ],
       "cwd": "${workspaceFolder}"
     }

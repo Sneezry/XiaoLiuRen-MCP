@@ -1,9 +1,12 @@
 {
   "name": "xiaoliuren-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "小六壬 MCP 服务器，提供日期时辰分析指导",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "xiaoliuren-mcp": "./index.js"
+  },
   "keywords": [
     "mcp",
     "model-context-protocol",
