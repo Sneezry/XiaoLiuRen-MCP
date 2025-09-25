@@ -164,11 +164,14 @@ npm run vscode-test # VS Code集成测试
 ```json
 {
   "mcpServers": {
-    "xiaoliuren": {
-      "command": "node", 
-      "args": ["index.js"],
-      "cwd": "/path/to/XiaoLiuRen-MCP"
-    }
+    "小六壬": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"xiaoliuren-mcp"
+			]
+		}
   }
 }
 ```
